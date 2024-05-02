@@ -20,6 +20,7 @@ public class Addition{
 
         System.out.printf("%d + %d + %d", a,b,c);
 
-        // float f = 2.5;
+        float f = 2.5f;
+        System.out.printf("%f",f);
     }
 }
