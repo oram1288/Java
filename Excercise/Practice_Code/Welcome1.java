@@ -1,4 +1,4 @@
-package Practice_Code;
+package Excercise.Practice_Code;
 
 public class Welcome1 {
 
