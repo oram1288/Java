@@ -15,6 +15,7 @@ package Week2;
         this.radius = 1.0;
         this.color = "red";
     }
+    
     //parameterised
     public Circle(double r)
     {
@@ -29,13 +30,28 @@ package Week2;
         this.radius = r;
         this.color = c;
     }
+    
     //copy constructor
+    public Circle(Circle C) {
+    this.color = C.color;
+    this.radius = C.radius;
+    }
     
-    
+    // GETTERS AND SETTERS
     public double getRadius()
     {
         return this.radius;
     }
+    public void setRadius(double r) {
+        this.radius = r;
+    }
+    public void setColor(String c) {
+        this.color = c;
+    }
+    public String getColor() {
+        return(this.color);
+    }
+    
     public double getArea()
     {
         return (pi * this.radius*this.radius);

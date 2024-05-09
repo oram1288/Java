@@ -12,15 +12,27 @@ public class demo {
         Circle c4 = new Circle(7.0, "Pink");
         System.out.println(c4);
 
+        Circle c5 = new Circle(c2);
+        System.out.println(c5);
 
-        System.out.println(c1.getRadius());
-        System.out.println(c2.getRadius());
-        System.out.println(c3.getRadius());
-        System.out.println(c4.getRadius());
+        c2.setColor("orange");
+        c5.setColor("golden");
 
-        System.out.println(c1.getArea());
-        System.out.println(c2.getArea());
-        System.out.println(c3.getArea());
-        System.out.println(c4.getArea());
+        System.out.println("c2: " + c2);
+        System.out.println("c5: " + c5);
+    
+        System.out.println("c5 color is " + c5);
+
+        // System.out.println(c1.getRadius());
+        // System.out.println(c2.getRadius());
+        // System.out.println(c3.getRadius());
+        // System.out.println(c4.getRadius());
+
+        // System.out.println(c1.getArea());
+        // System.out.println(c2.getArea());
+        // System.out.println(c3.getArea());
+        // System.out.println(c4.getArea());
+
+
     }
 }
