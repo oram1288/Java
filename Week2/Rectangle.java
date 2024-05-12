@@ -1,8 +1,8 @@
 package Week2;
 
 public class Rectangle {
-    private float length = 1.0f;
-    private float width = 1.0f;
+    private float length;
+    private float width;
 
     // no arguement
     public Rectangle() {
