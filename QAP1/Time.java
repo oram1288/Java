@@ -11,31 +11,41 @@ public class Time {
         this.second = second;
     }
 
+    public int getHour() {
+        return hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public int getSecond() {
+        return second;
+    }
+
     public void setHour(int hour) {
-        if (hour >= 0 && hour <= 23) {
-            this.hour = hour;
-        } else {
-            System.out.println("Invalid hour value");
-        }
+        this.hour = hour;
     }
 
     public void setMinute(int minute) {
-        if (minute >= 0 && minute <= 59) {
-            this.minute = minute;
-        } else {
-            System.out.println("Invalid minute value");
-        }
+        this.minute = minute;
     }
 
     public void setSecond(int second) {
-        if (second >= 0 && second <= 59) {
-            this.second = second;
-        } else {
-            System.out.println("Invalid second value");
-        }
+        this.second = second;
     }
 
-    public void nextSecond() {
+    public void setTime(int hour, int minute, int second) {
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
+
+    public String toString() {
+        return (this.hour + ":" + this.minute + ":" + this.second);
+    }
+
+    public Time nextSecond() {
         second++;
         if (second >= 60) {
             second = 0;
@@ -50,7 +60,7 @@ public class Time {
         }
     }
 
-    public void previousSecond() {
+    public Time previousSecond() {
         second--;
         if (second < 0) {
             second = 59;
@@ -65,7 +75,4 @@ public class Time {
         }
     }
 
-    public String toString() {
-        return String.format("%02d:%02d:%02d", hour, minute, second);
-    }
 }
