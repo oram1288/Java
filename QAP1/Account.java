@@ -42,6 +42,7 @@ public class Account {
         return balance;
     }
 
+    ////// FIX
     public int transferTo(Account another, int amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;

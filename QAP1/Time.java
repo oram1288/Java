@@ -45,6 +45,7 @@ public class Time {
         return (this.hour + ":" + this.minute + ":" + this.second);
     }
 
+    ////// FIX
     public Time nextSecond() {
         second++;
         if (second >= 60) {
