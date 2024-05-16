@@ -41,10 +41,6 @@ public class Time {
         this.second = second;
     }
 
-    public String toString() {
-        return (this.hour + ":" + this.minute + ":" + this.second);
-    }
-
     ////// FIX
     public Time nextSecond() {
         second++;
@@ -59,6 +55,7 @@ public class Time {
                 }
             }
         }
+        return this; 
     }
 
     public Time previousSecond() {
@@ -74,6 +71,11 @@ public class Time {
                 }
             }
         }
+        return this;
+    }
+    
+    public String toString() {
+        return (this.hour + ":" + this.minute + ":" + this.second);
     }
 
 }

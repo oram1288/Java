@@ -44,8 +44,7 @@ public class Account {
 
     ////// FIX
     public int transferTo(Account another, int amount) {
-        if (amount > 0 && amount <= balance) {
-            balance -= amount;
+        if (amount <= balance) {
             another.balance += amount;
             System.out.println("$" + amount + " transferred from Account " + id + " to Account " + another.id);
         } else {
