@@ -42,7 +42,7 @@ public class Account {
         return balance;
     }
 
-    ////// FIX
+    // Had a little trouble with this if statement, not sure if there is a simplier way of doing it.
     public int transferTo(Account another, int amount) {
         if (amount <= balance) {
             another.balance += amount;
@@ -50,6 +50,7 @@ public class Account {
         } else {
             System.out.println("Amount exceeded balance");
         }
+        return (int) balance;
     }
 
     public String toString() {
