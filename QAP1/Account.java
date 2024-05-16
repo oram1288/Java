@@ -30,7 +30,7 @@ public class Account {
     }
 
     public int credit(int amount) {
-        return amount + balance;
+        return balance = (amount + balance);
     }
 
     public int debit(int amount) {
@@ -53,7 +53,7 @@ public class Account {
     }
 
     public String toString() {
-        return("[id = " + this.id + ", balance = " + this.balance + "]");
+        return("Account [id = " + this.id + ", name = " + this.name + ", balance = " + this.balance + "]");
     }
 }
 
