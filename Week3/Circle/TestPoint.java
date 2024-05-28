@@ -8,7 +8,7 @@ public class TestPoint {
         // P1.setXY(5, 10);
         // System.out.println(P1);
 
-        MyPoint P2 = new MyPoint(5, 10);
+        // MyPoint P2 = new MyPoint(5, 10);
         // System.out.println(P1.distance(2, 4));
         // System.out.println(P1.distance(10, 20));
 
