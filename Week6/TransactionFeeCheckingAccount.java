@@ -15,7 +15,15 @@ public class TransactionFeeCheckingAccount extends CheckingAccount{
         super.withdraw(FEE);
     }
 
+    public void withdraw(double amount) {
+        super.withdraw(amount + FEE);
+    }
+
+    public void deposit(double amount) {
+        super.deposit(amount - FEE);
+    }
+
     public String toString() {
-        return (super.toString() + "Transaction Fee = " + this.FEE);
+        return (super.toString() + "Transaction Fee = " + FEE);
     }
 }
