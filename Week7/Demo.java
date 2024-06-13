@@ -8,5 +8,6 @@ public class Demo {
 
         Cat cat1 = new Cat("Hardy");
         System.out.println(cat1);
+
     }
 }

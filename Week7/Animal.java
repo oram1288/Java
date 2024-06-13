@@ -1,6 +1,6 @@
 package Week7;
 
-public abstract class Animal {
+public abstract class Animal implements AnimalInter, MarketInter, FunctionInter{
     // abstract key word is a non access modifier, you 
     // cannot instantiate your abstract class
 
@@ -26,6 +26,10 @@ public abstract class Animal {
 
     public static int getCount() {
         return count;
+    }
+
+    public void breath() {
+        System.out.println("All animals can breath");
     }
 
     public abstract void greet();

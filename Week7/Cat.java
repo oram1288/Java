@@ -16,6 +16,9 @@ public class Cat extends Animal{
         System.err.println("I eat meat");
     }
 
+    public void moveable(){}
+    public void sleep(){}
+
     public String toString() {
         return (super.toString() + "Species = " + this.species);
     }

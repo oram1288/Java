@@ -1,10 +1,12 @@
 package Week7;
 
-public class Dog extends Animal{
-    
-    Dog (String n) {
+public class GermanShep extends Dog{
+    GermanShep (String n) {
         super(n);
     }
+
+    public void moveable(){}
+    public void sleep(){}
 
     public void greet() {
         System.out.println("Woof Woog");
@@ -13,7 +15,4 @@ public class Dog extends Animal{
     public void eat() {
         System.err.println("I eat bones");
     }
-
-    public void moveable(){}
-    public void sleep(){}
 }
