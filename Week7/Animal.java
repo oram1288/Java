@@ -36,6 +36,6 @@ public abstract class Animal implements AnimalInter, MarketInter, FunctionInter{
     public abstract void eat();
 
     public String toString() {
-        return ("Animal name = " + this.name + "Number of animals = " + count);
+        return ("Animal name = " + this.name + " Number of animals = " + count);
     }
 }
