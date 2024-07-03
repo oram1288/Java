@@ -21,7 +21,7 @@ class ExceptionPractice
 }
 
 // Multiple Catch Statements
-class Example2{
+class Example2{ // have to change to 'ExceptionPractice' to test
 
     public static void main(String args[]){
         try{
@@ -43,7 +43,7 @@ class Example2{
 }
 
 // try block within another try block
-class Nest{
+class Nest{ // have to change to 'ExceptionPractice' to test
 
     public static void main(String args[]){
         //Parent try block
