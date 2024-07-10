@@ -44,4 +44,7 @@ public class Employee {
         salary *= (1 + percentage / 100);
     }
     
+    public String toString() {
+        return (getName() + " has a salary " + this.salary );
+    }
 }
