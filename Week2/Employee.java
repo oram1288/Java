@@ -20,6 +20,10 @@ public class Employee {
         this.firstName = firstName;
     }
 
+    public int getID() {
+        return id;
+    }
+
     public String getName() {
         return (this.firstName + this.lastName);
     }
