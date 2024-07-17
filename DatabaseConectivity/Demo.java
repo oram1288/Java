@@ -1,12 +1,52 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
+         WriteDB();
+         ReadDB();
+        
+        
+    }
+    public static void ReadDB()
+    {
+        ArrayList<Employee> EmpList = new ArrayList<>();
 
+        String query = "Select * from employee";
+
+        try{
+            Connection con = DatabaseConnection.getcon();
+            PreparedStatement statement = con.prepareStatement(query);
+            ResultSet rs = statement.executeQuery();
+
+            while(rs.next()){
+                Employee temp = new Employee();
+                temp.setId(rs.getInt("id"));
+                temp.setFirstName(rs.getString("first_name"));
+                temp.setLastName(rs.getString("last_name"));
+                temp.setSalary(rs.getDouble("salary"));
+                EmpList.add(temp);
+            }
+            con.close();
+
+
+        }
+        catch(SQLException e)
+        {
+            e.printStackTrace();
+
+        }
+    
+        System.out.println(EmpList.toString());
+
+    }
+
+    public static void WriteDB()
+    {
         ArrayList<Employee> Emplist = new ArrayList<>();
         Scanner in = new Scanner(System.in);
         int option = 0;
@@ -52,8 +92,5 @@ public class Demo {
         System.out.println(Emplist.toString());
 
 
-
-
-        
-    }
+}
 }

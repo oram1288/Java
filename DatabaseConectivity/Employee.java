@@ -6,6 +6,13 @@ public class Employee implements Serializable{
     private String lastName;
     private double salary;
 
+    Employee()
+    {
+        this.id = 0;
+        this.firstName = null;
+        this.lastName = null;
+        this.salary = 0.0; 
+    }
      //Parameterised Constructor
     Employee(int id, String firstname, String ln, double sal)
     {
@@ -24,6 +31,16 @@ public class Employee implements Serializable{
         this.salary = e.salary;
      
     }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
     public int getID()
     {
       return this.id;  
