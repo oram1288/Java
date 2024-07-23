@@ -6,12 +6,8 @@ public class Employee implements Serializable{
     private String lastName;
     private double salary;
 
-    Employee()
-    {
-        this.id = 0;
-        this.firstName = null;
-        this.lastName = null;
-        this.salary = 0.0; 
+    
+    public Employee() {
     }
      //Parameterised Constructor
     Employee(int id, String firstname, String ln, double sal)

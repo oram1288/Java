@@ -1,0 +1,7 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "DatabaseReview/src/lib/jbcrypt-0.4.jar",
+    "DatabaseReview/src/lib/postgresql-42.5.4.jar"
+  ]
+}
